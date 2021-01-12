@@ -53,11 +53,12 @@ namespace TechJobsConsole
                 if (aValue.Contains(value.ToLower()))
                 {
                     jobs.Add(row);
+                    break;
                 }
             }
-
             return jobs;
         }
+       
 
         // FindByValue search method:
         public static List<Dictionary<string, string>> FindByValue(string value)
@@ -72,6 +73,7 @@ namespace TechJobsConsole
                     if (kvp.Value.ToLower().Contains(value.ToLower()))
                     {
                         jobs.Add(row);
+                        break;
                     }
                 }
             }
